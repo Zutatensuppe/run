@@ -1,0 +1,4 @@
+#!/bin/env php
+<?php
+
+echo 'hi, this is ' . getenv('RUN_TASK') . "\n";

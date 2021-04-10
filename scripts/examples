@@ -1,0 +1,6 @@
+#!/bin/sh
+
+"$RUN_BIN" example_python
+"$RUN_BIN" example_sh
+"$RUN_BIN" example_php
+"$RUN_BIN" example_node

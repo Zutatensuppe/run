@@ -1,0 +1,4 @@
+#!/bin/env python
+import os
+
+print(f'hi, this is {os.environ["RUN_TASK"]}')
