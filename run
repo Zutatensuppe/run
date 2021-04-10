@@ -4,6 +4,11 @@ RUN_BIN="$(realpath "$0")"
 RUN_DIR=$(dirname "$RUN_BIN")
 RUN_SCRIPTS_DIR="$RUN_DIR/scripts"
 
+if [ $# -eq 0 ]; then
+  ls $RUN_SCRIPTS_DIR
+  exit 0
+fi
+
 RUN_TASK="$1"
 [ $# -gt 0 ] && shift
 

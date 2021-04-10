@@ -5,11 +5,16 @@ Script to call other scripts in a unified way.
 ## Usage
 
 ```
-./run TASK [TASK_ARGUMENTS...]
+./run [TASK [TASK_ARGUMENTS...]]
 ```
 
-The exit code from `run` is 2 in case the `TASK` script does not 
-exist, otherwise it exists with `TASK`s exit code.
+If no task is given, the list of available tasks (scripts in scripts 
+directory) is printed out.
+
+If a task is given, `run` will execute it with additionally provided
+arguments and exit with that scripts exit code.
+
+If the given task does not exist, `run` exists with exit code `2`.
 
 ## Getting Started
 
