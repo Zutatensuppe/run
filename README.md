@@ -6,7 +6,7 @@ Script to call other scripts in a unified way.
 
 1. Put `run` into a folder :)
 ```
-$ tree .
+tree
 .
 ├── [...]
 └── run
@@ -14,9 +14,10 @@ $ tree .
 
 2. Create a scripts folder next to it
 ```
-$ mkdir scripts
+mkdir scripts
 
-$ tree .
+tree
+.
 ├── [...]
 ├── scripts
 └── run
@@ -24,20 +25,20 @@ $ tree .
 
 3. Create a script and make it executable
 ```
-$ echo "#\!/bin/sh\\necho \"hi, this is \$RUN_TASK\"" > scripts/mytask
-$ chmod +x scripts/mytask
+echo "#\!/bin/sh\\necho \"hi, this is \$RUN_TASK\"" > scripts/mytask
+chmod +x scripts/mytask
 ```
 
 4. Run the script via `run`
 ```
-$ ./run mytask
+./run mytask
 hi, this is mytask
 ```
 
 ## Environment Variables (Set by `run`)
 
 The following environment variables are exported before `run` calls
-a script, so they are always available:
+a script, so they are always available in the scripts:
 
 **RUN_BIN**  
 
