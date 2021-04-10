@@ -2,6 +2,12 @@
 
 Script to call other scripts in a unified way.
 
+## Usage
+
+```
+./run TASK [TASK_ARGUMENTS...]
+```
+
 ## Getting Started
 
 1. Put `run` into a folder :)
