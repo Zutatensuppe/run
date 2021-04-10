@@ -8,6 +8,9 @@ Script to call other scripts in a unified way.
 ./run TASK [TASK_ARGUMENTS...]
 ```
 
+The exit code from `run` is 2 in case the `TASK` script does not 
+exist, otherwise it exists with `TASK`s exit code.
+
 ## Getting Started
 
 1. Put `run` into a folder :)
