@@ -2,7 +2,7 @@
 
 Script to call other scripts in a unified way.
 
-## Getting started
+## Getting Started
 
 1. Put `run` into a folder :)
 ```
@@ -34,7 +34,7 @@ $ ./run mytask
 hi, this is mytask
 ```
 
-## Environment variables (set by `run`)
+## Environment Variables (Set by `run`)
 
 The following environment variables are exported before `run` calls
 a script, so they are always available:
@@ -52,7 +52,7 @@ The directory in which `run` exists.
 
 The task that was given to `run`.  
 
-## Additional Environment variables (convention)
+## Additional Environment Variables (by Convention)
 
 The following environment variables are not set by `run`, but should
 be used according to their description when needed:
